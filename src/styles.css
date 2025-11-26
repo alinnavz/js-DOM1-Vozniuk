@@ -1,0 +1,88 @@
+body {
+    background: #caebf4;
+    font-family: 'Poppins', Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.calc {
+    background: rgb(156, 227, 238);
+    padding: 25px;
+    width: 310px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.inputs input {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #8d999c;
+    border-radius: 10px;
+}
+
+h2 {
+    margin: 5px 0 15px 0;
+    font-size: 20px;
+}
+
+.operators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.operators button {
+    padding: 10px 15px;
+    font-size: 22px;
+    border: none;
+    background: #5db5c5;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #478196;
+    transition: 0.1s;
+}
+
+.operators button:active {
+    box-shadow: 0 1px 0 #aaa;
+    transform: translateY(3px);
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.numbers button {
+    padding: 14px;
+    font-size: 20px;
+    border: none;
+    background: #4784cf;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #325395;
+    transition: 0.1s;
+}
+
+.numbers button:active {
+    box-shadow: 0 1px 0 #999;
+    transform: translateY(3px);
+}
+
+#clear {
+    background: #ff6868;
+    color: white;
+}
